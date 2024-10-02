@@ -10,7 +10,7 @@
 
 ·无线调试相关功能使用了开源项目RareBox的代码
 
-![RareBox地址](https://github.com/Genouka/RareBox)
+(https://github.com/Genouka/RareBox)
 
 应用源专为华为儿童手表打造
 
