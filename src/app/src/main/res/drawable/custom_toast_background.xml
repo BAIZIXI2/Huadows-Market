@@ -1,0 +1,6 @@
+<!-- res/drawable/custom_toast_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#808080"/> <!-- 灰色背景 -->
+    <corners android:radius="10dp"/> <!-- 圆角 -->
+</shape>
+<!-- 自定义消息布局的背景外观 -->

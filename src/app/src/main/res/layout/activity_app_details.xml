@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="#121212">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:padding="16dp"
+         android:orientation="vertical">
+
+        <ImageView
+             android:layout_height="100dp"
+             android:layout_width="100dp"
+             android:scaleType="centerInside"
+             android:background="@drawable/rounded_corners"
+             android:id="@+id/appIconImageView"
+             android:layout_gravity="center" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginBottom="8dp"
+             android:textSize="22sp"
+             android:textColor="#FFFFFF"
+             android:id="@+id/appNameTextView"
+             android:textStyle="bold"
+             android:layout_gravity="center" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginBottom="4dp"
+             android:textColor="#BBBBBB"
+             android:id="@+id/publisherTextView"
+             android:layout_gravity="center" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginBottom="8dp"
+             android:textColor="#BBBBBB"
+             android:id="@+id/downloadsAndSizeTextView"
+             android:layout_gravity="center" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginBottom="16dp"
+             android:textColor="#AAAAAA"
+             android:id="@+id/packageNameTextView"
+             android:layout_gravity="center" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginBottom="4dp"
+             android:textColor="#FFFFFF"
+             android:id="@+id/descriptionTextView"
+             android:layout_gravity="center" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginBottom="4dp"
+             android:textColor="#AAAAAA"
+             android:id="@+id/changelogTextView"
+             android:layout_gravity="center" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textSize="18sp"
+             android:textColor="#FFFFFF"
+             android:layout_marginTop="16dp"
+             android:text="应用截图"
+             android:textStyle="bold"
+             android:layout_gravity="center" />
+
+        <androidx.viewpager2.widget.ViewPager2
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginTop="16dp"
+             android:id="@+id/screenshotsViewPager" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textSize="18sp"
+             android:textColor="#FFFFFF"
+             android:layout_marginTop="16dp"
+             android:text="应用权限"
+             android:textStyle="bold"
+             android:layout_gravity="center" />
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:orientation="vertical"
+             android:id="@+id/permissionsLayout">
+
+        </LinearLayout>
+
+        <FrameLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:id="@+id/fragment_container">
+
+        </FrameLayout>
+
+        <Button
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:background="@drawable/rounded_button"
+             android:textColor="#FFFFFF"
+             android:id="@+id/downloadButton"
+             android:text="下载应用"
+             android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</ScrollView>

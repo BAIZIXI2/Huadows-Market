@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:padding="16dp">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:orientation="vertical">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="16dp"
+             android:background="@drawable/home_button"
+             android:padding="16dp"
+             android:orientation="vertical"
+             android:id="@+id/announcementLayout">
+
+            <ImageView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:scaleType="centerCrop"
+                 android:id="@+id/announcementImage" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:textSize="18sp"
+                 android:layout_marginTop="8dp"
+                 android:id="@+id/announcementTitle"
+                 android:textStyle="bold" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:visibility="gone"
+                 android:textSize="14sp"
+                 android:layout_marginTop="4dp"
+                 android:id="@+id/announcementContent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:gravity="center"
+             android:orientation="horizontal">
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                 android:background="@drawable/home_button"
+                 android:clickable="true"
+                 android:padding="8dp"
+                 android:layout_weight="1"
+                 android:focusable="true"
+                 android:id="@+id/extraButton1">
+
+                <ImageButton
+                     android:layout_height="40dp"
+                     android:layout_width="40dp"
+                     android:src="@drawable/app_manage"
+                     />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textSize="16sp"
+                     android:layout_marginStart="8dp"
+                     android:text="应用管理"
+                     android:layout_gravity="center" />
+
+            </LinearLayout>
+
+            <View
+                 android:layout_height="wrap_content"
+                 android:layout_width="16dp" />
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="0dp"
+                 android:background="@drawable/home_button"
+                 android:clickable="true"
+                 android:padding="8dp"
+                 android:layout_weight="1"
+                 android:focusable="true"
+                 android:id="@+id/extraButton2">
+
+                <ImageButton
+                     android:layout_height="40dp"
+                     android:layout_width="40dp"
+                     android:src="@drawable/toolbox"
+                     android:background="@android:color/transparent" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textSize="16sp"
+                     android:layout_marginStart="8dp"
+                     android:text="综合工具箱"
+                     android:layout_gravity="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:textSize="24sp"
+             android:paddingBottom="16dp"
+             android:id="@+id/title"
+             android:text="分类"
+             android:textStyle="bold" />
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginBottom="24dp"
+             android:gravity="center"
+             android:orientation="horizontal">
+
+            <ImageButton
+                 android:layout_height="100dp"
+                 android:layout_width="150dp"
+                 android:scaleType="centerCrop"
+                 android:layout_marginEnd="16dp"
+                 android:background="@android:color/transparent"
+                 android:id="@+id/imageButtonLeft" />
+
+            <ImageButton
+                 android:layout_height="100dp"
+                 android:layout_width="150dp"
+                 android:scaleType="centerCrop"
+                 android:background="@android:color/transparent"
+                 android:id="@+id/imageButtonRight" />
+
+        </LinearLayout>
+
+        <GridLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="16dp"
+             android:id="@+id/squareContainer"
+             android:columnCount="2"
+             android:rowCount="1"
+             android:layout_gravity="center">
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

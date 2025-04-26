@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#2196F3</color>
+    <color name="green">#4CAF50</color>
+    <color name="red">#F44336</color>
+    <color name="black">#000000</color>
+    <color name="button_default">#FF6200EE</color> <!-- 默认按钮颜色 -->
+    <color name="button_pressed">#FF3700B3</color> <!-- 按下时按钮颜色 -->
+     <color name="grey">#aaaaaa</color> <!-- 按下时按钮颜色 -->
+    
+    <color name="orange">#FFA500</color>
+    
+
+</resources>

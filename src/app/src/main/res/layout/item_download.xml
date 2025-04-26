@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:layout_marginBottom="8dp"
+     android:background="@drawable/alist_item_background"
+     android:padding="16dp"
+     android:orientation="vertical"
+     android:layout_marginTop="8dp">
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="center_vertical"
+         android:orientation="horizontal"
+         android:layout_marginTop="8dp">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:orientation="vertical"
+             android:layout_weight="1">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:textSize="16sp"
+                 android:textColor="#FFF"
+                 android:id="@+id/app_name"
+                 android:text="App Name" />
+
+            <ProgressBar
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:max="100"
+                 android:indeterminate="false"
+                 style="?android:attr/progressBarStyleHorizontal"
+                 android:progressDrawable="@drawable/custom_progress"
+                 android:id="@+id/download_progress" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:gravity="end"
+                 android:textSize="14sp"
+                 android:textColor="#FFF"
+                 android:id="@+id/download_progress_text"
+                 android:text="0%" />
+
+        </LinearLayout>
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:gravity="center_vertical"
+             android:orientation="horizontal">
+
+            <ImageButton
+                 android:layout_height="40dp"
+                 android:layout_width="40dp"
+                 android:src="@drawable/ic_retry"
+                 android:scaleType="centerInside"
+                 android:contentDescription="Retry Download"
+                 android:background="?attr/selectableItemBackgroundBorderless"
+                 android:layout_marginStart="8dp"
+                 android:id="@+id/retry_button" />
+
+            <ImageButton
+                 android:layout_height="40dp"
+                 android:layout_width="40dp"
+                 android:src="@drawable/ic_delete"
+                 android:scaleType="centerInside"
+                 android:contentDescription="Delete Download"
+                 android:background="?attr/selectableItemBackgroundBorderless"
+                 android:layout_marginStart="8dp"
+                 android:id="@+id/delete_button" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

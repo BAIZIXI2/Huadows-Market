@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:orientation="vertical"
+   android:background="@android:color/black">
+
+    >
+
+   <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:gravity="center"
+                 android:orientation="horizontal"
+        
+        >
+
+                <Button
+                     android:layout_height="wrap_content"
+                     android:layout_width="0dp"
+                     android:background="@drawable/home_button"
+                     android:layout_weight="1"
+                     android:id="@+id/show_system_apps_button"
+                     android:text="显示系统应用" />
+
+                <Button
+                     android:layout_height="wrap_content"
+                     android:layout_width="0dp"
+                     android:background="@drawable/home_button"
+                     android:layout_weight="1"
+                     android:id="@+id/show_disabled_apps_button"
+                     android:text="显示禁用应用" />
+
+            </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:id="@+id/swipe_refresh_layout">
+
+        <ListView
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:background="@android:color/black"
+             android:padding="2dp"
+             android:id="@+id/app_list_view">
+
+        </ListView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

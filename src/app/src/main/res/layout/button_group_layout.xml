@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:padding="8dp"
+     android:orientation="vertical">
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_marginBottom="4dp"
+         android:textSize="16sp"
+         android:textColor="#000000"
+         android:id="@+id/buttonGroupTitle" />
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:orientation="horizontal">
+
+        <Button
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:background="@null"
+             android:layout_weight="1"
+             android:id="@+id/firstButton" />
+
+        <Button
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:background="@null"
+             android:layout_weight="1"
+             android:id="@+id/secondButton" />
+
+    </LinearLayout>
+
+</LinearLayout>

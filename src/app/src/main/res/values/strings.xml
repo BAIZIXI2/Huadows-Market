@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">华软商店</string>
+<string name="app_icon">应用图标</string>
+
+    
+    <string name="announcement_image">公告图片</string>
+    <string name="search_hint">搜索应用</string>
+
+</resources>
